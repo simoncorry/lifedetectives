@@ -1,0 +1,23 @@
+#contact input {
+    max-height:30px;
+    padding-top:10px;
+}
+
+#contact select {
+}
+
+#contact input.button {
+    margin-right:10px; 
+}
+
+#process .back {
+    visibility:hidden;
+}
+
+#process .selected .back {
+    visibility:visible;
+}
+
+select {
+    background:#FFF !important;
+}

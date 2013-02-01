@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+.column-third {
+	width:31%\9;
+	display:block\9;
+	float:left\9;
+}
+
+.column-half {
+	display:block\9;
+	float:left\9;	
+}
+
+#contact input, select {
+	padding-left:0px\9;	
+}
+
+#contact select {
+	width:97%\9;
+}
+
+#contact textarea {
+	width:98%\9 !important;	
+}
+
+h1 {
+	font-weight:normal\9;
+}
+
+hr {
+	display:none\9;	
+}
+
+.pencil {
+	display:none\9;
+}
+
+#navigation {
+	height:26px\9;
+	padding-top:12px\9;
+}
+
+#navigation li {
+	display:inline\9;
+}
+
+#navigation select {
+	display:inline\9;
+}
+
+#welcome h1 {
+	width:550px\9;
+}
+
+#welcome p {
+	width:620px\9;	
+}
+
+#welcome hr+p {	
+	width:500px\9;
+}
+
+#coaching p {
+	width:540px\9;
+}
+
+#coaching ul {
+	height:500px\9;
+	width:680px\9;
+}
+
+#coaching ul > li {
+	display:block\9;
+	float:left\9;
+}
+
+#coaching .yes {
+	display:none\9;
+}
+
+#stages .button {
+	clear:both\9;
+}
+
+#process ul > li {
+	display:block\9;
+	float:left\9;
+	margin:10px\9;
+}
+
+#packages .magnify {
+	/*display:none\9;*/
+    z-index:0;
+}
+
+#packages h1+p {
+	width:530px\9;	
+}
+
+#packages ul {
+    z-index:1;
+    position:relative;
+    height:180px;
+}
+
+#packages ul > li {
+	display:block\9;
+	float:left\9;
+	width:135px\9;
+	margin-top:30px\9;
+	margin-bottom:30px\9;
+    background:none;
+}
+
+#switcher-panel {
+    display:block;
+	width:800px\9;	
+}
+
+#story {
+	height:700px\9;
+}
+
+#story .photograph {
+	display:inline\9;
+}
+
+#contact {
+	height:770px\9;	
+}
+
+#contact textarea {
+	padding:0px\9;
+}
+
+#footer span {
+	display:inline\9;
+}
+
+#footer a {
+	display:inline\9;	
+}
+
+#footer a.fabric {
+	background:none\9;		
+}
+
+#footer a.elixel {
+	background:none\9;	
+}
