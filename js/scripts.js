@@ -149,25 +149,29 @@ $(document).ready(function(){
 	// Contact JS
 	
 	$("#contact-form").submit(function(event) {
-		$('#contact #result').text("Sending message...");
 		event.preventDefault();
-		var $form = $(this),
-			$inputs = $form.find("input, textarea, select, button"),
-			serialisedData = $form.serialize();
-			
-		$inputs.attr("disabled","disabled");
-		url = $form.attr('action');
-			
-		$.ajax({
-			type: 'POST',
-			url: url,
-			data: serialisedData,
-			success: function(response, textStatus, jqXHR) {$('#contact #result').text("Message sent successfully.");},
-			error: function (jqXHR, textStatus, errorThrown) {$('#contact #result').text("Message did not send.");},
-			complete: function(){
-            	$inputs.removeAttr("disabled");
-        	}		
-		});
+	        if ($("#verify").val() == "4") {
+	            $('#contact #result').text("Sending message...");
+	            var $form = $(this),
+	                $inputs = $form.find("input, textarea, select, button"),
+	                serialisedData = $form.serialize();
+	                
+	            $inputs.attr("disabled","disabled");
+	            url = $form.attr('action');
+	                
+	            $.ajax({
+	                type: 'POST',
+	                url: url,
+	                data: serialisedData,
+	                success: function(response, textStatus, jqXHR) {$('#contact #result').text("Message sent successfully.");},
+	                error: function (jqXHR, textStatus, errorThrown) {$('#contact #result').text("Message did not send.");},
+	                complete: function(){
+	                    $inputs.removeAttr("disabled");
+	                }		
+	            });
+	        } else {
+	            alert("Your verification answer is wrong, please check it and try again.");
+	        }
 	});
 });
 
